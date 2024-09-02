@@ -75,6 +75,7 @@ LIB = $(CXXLIB) $(LAPACKLIB) $(FFTW_LIB)
 export
 
 all: 
+	(mkdir bin)
 	(cd SRC; $(MAKE))
 
 .PHONY: clean
@@ -82,3 +83,4 @@ all:
 clean:
 	(cd SRC; $(MAKE) clean)
 	(cd bin; rm -f build_ref dfpt_mpi)
+	(cd -rf bin)

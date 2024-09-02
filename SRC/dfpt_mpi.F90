@@ -1,5 +1,15 @@
 program dfpt_mpi
 
+  ! ==========================================================
+  ! 
+  ! Dual Fermion Perturbation Theory code, developed by
+  ! 
+  ! Edin Kapetanović (ekapetan@physnet.uni-hamburg.de)
+  ! 
+  ! Alexander Lichtenstein (alichten@physnet.uni-hamburg.de)
+  ! 
+  ! ==========================================================
+
   use dqmc_cfg
   use dqmc_geom_wrap
   use dqmc_hubbard
